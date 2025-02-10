@@ -47,15 +47,32 @@ SELECT User, Host FROM mysql.user;
 ```
 ![3](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img3.png)`
 
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+5. `Назначаю права на пользователя`
+```
+   GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
+   
+```
+6. `Просматриваем права пользователя sys_temp`
+```
+SHOW GRANTS FOR 'systemp'@'localhost';
+```
+![4](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img4.png)`
+
+7. `Перелогиниваемся в  mysql под sys_temp`
+![5](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img5.png)`
+
+
+
+
+
+8. `Просматриваем права пользователя sys_temp`
+9. `Просматриваем права пользователя sys_temp`
+10. `Просматриваем права пользователя sys_temp`
+
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+   GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
+   
 ```
 
 `При необходимости прикрепитe сюда скриншоты
