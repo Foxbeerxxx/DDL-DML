@@ -36,8 +36,17 @@ sudo mysql -u root -p
 ```
 ![2](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img2.png)`
 
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
+3. `Создаю пользователя`
+```
+CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
+```
+
+4. `Отправляю команду на список пользователей и видим , что все прошло верно`
+```
+SELECT User, Host FROM mysql.user;
+```
+![3](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img3.png)`
+
 5. `Заполните здесь этапы выполнения, если требуется ....`
 6. 
 
