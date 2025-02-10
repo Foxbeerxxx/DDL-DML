@@ -61,21 +61,29 @@ SHOW GRANTS FOR 'systemp'@'localhost';
 7. `Перелогиниваемся в  mysql под sys_temp`
 ![5](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img5.png)`
 
+8. `Скачиваю и распаковываю архив`
+```
+wget https://downloads.mysql.com/docs/sakila-db.zip
+unzip sakila-db.zip
+```
+![6](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img6.png)`
 
+9. `Создаю базу данных sakilla и подгружаю схему и данные с архива`
+```
+CREATE DATABASE sakila;
+USE sakila;
+```
+```
+ mysql -u sys_temp -p sakila < sakila-schema.sql
+ mysql -u sys_temp -p sakila < sakila-data.sql
+```
 
-
-
-8. `Просматриваем права пользователя sys_temp`
-9. `Просматриваем права пользователя sys_temp`
-10. `Просматриваем права пользователя sys_temp`
-
+10. `Отправляем команду для проверки`
+```
+    mysql -u sys_temp -p sakila -e "SHOW TABLES;"
 
 ```
-   GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
-   
-```
-
-`При необходимости прикрепитe сюда скриншоты
+![7](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img7.png)`
 
 
 
