@@ -102,31 +102,31 @@ USE sakila;
 
 1. `Составляю таблицу`
 
-![8](https://github.com/Foxbeerxxx/DDL-DML/blob/main/img/img8.png)`
+
 
 ```
 Название таблицы	Н﻿азвание первичного ключа
 ﻿actor	﻿actor_id
-﻿actor_info	не знаю :(
+﻿actor_info	 (View)
 ﻿address	﻿address_id
 ﻿category	﻿category_id
 ﻿city	city_id
 ﻿country	﻿country_id
 ﻿customer	﻿customer_id
-﻿customer_list	не знаю :(
+﻿customer_list	(View)
 ﻿film	﻿film_id
 ﻿film_actor	﻿ actor_id, film_id
 ﻿film_category	﻿film_id,category_id 
-﻿film_list	не знаю :(
+﻿film_list	(View)
 ﻿film_text	﻿film_id
 ﻿inventory	﻿inventory_id
 ﻿language	﻿language_id
 ﻿payment	﻿payment_id
 ﻿rental	﻿ rental_id
-﻿sales_by_film_category	не знаю :(   category_id ?
+﻿sales_by_film_category	(View)
 ﻿sales_by_store	store id
 ﻿staff	﻿staff_id
-﻿staff_list	﻿ actor_id, film_id,category_id
+﻿staff_list	﻿ (View)
 ﻿store	﻿store_id
 
 
